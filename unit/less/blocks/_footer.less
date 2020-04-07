@@ -1,0 +1,186 @@
+.footer {
+  padding-top: 60px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    padding-top: 110px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    padding-top: 100px;
+  }
+}
+
+.footer-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  z-index: -1;
+
+  // Планшет
+  @media (min-width: 768px) {
+    margin-top: -100px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-top: -222px;
+  }
+}
+
+.footer-block {
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-title {
+  margin-bottom: 42px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer-text {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  letter-spacing: 1.2px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer-link {
+  color: #039be5;
+  border-bottom: 1px solid #039be5;
+  transition: 0.4s;
+
+  &:hover {
+    color: #ea655f;
+    border-color: #ea655f;
+    transition: 0.4s;
+  }
+
+  &:active {
+    color: #000;
+    border-color: #000;
+    transition: 0.4s;
+  }
+}
+
+.communication-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.communication-icon {
+  display: block;
+  font-size: 50px;
+  margin-right: 29px;
+  z-index: 5;
+  transition: 0.6s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 40%;
+    transition: 0.6s;
+  }
+}
+
+.vk-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #4d76a1;
+  border-radius: 20%;
+  color: #fff;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  border-radius: 20%;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.git-icon {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.communication-link {
+  position: relative;
+  font-size: 18px;
+  color: #000;
+  border-bottom: 1px solid #000;
+
+  &:hover {
+    color: #039be5;
+    border-color: #039be5;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: #ea655f;
+    border-color: #ea655f;
+    transition: 0.3s;
+  }
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}

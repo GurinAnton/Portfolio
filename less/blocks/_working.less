@@ -1,0 +1,281 @@
+.working {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 65px 15px;
+  font-family: "Montserrat", sans-serif;
+
+  // Планшет
+  @media (min-width: 768px) {
+    min-width: 768px;
+    padding: 90px 30px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 170px;
+    padding-bottom: 36px;
+    background-image: url("../img/working/bg.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.working-container {
+  max-width: 1005px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.working .portfolio-title {
+  text-align: center;
+
+  // Планшет
+  @media (min-width: 768px) {
+    margin-bottom: 162px;
+  }
+}
+
+.working .portfolio-title__name {
+  font-size: 42px;
+  margin-top: -55px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    background-color: #fbdc4d;
+    bottom: 7px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+
+    // Планшет
+    @media (min-width: 768px) {
+      height: 12px;
+      bottom: 8px;
+    }
+
+    // Десктоп
+    @media (min-width: 1200px) {
+      height: 15px;
+      bottom: 10px;
+    }
+  }
+
+  // Планшет
+  @media (min-width: 416px) {
+    font-size: 52px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 64px;
+  }
+}
+
+.working-block {
+  position: relative;
+  width: 50%;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-color: #e1eef4;
+    top: 90px;
+    left: 0;
+    bottom: -15px;
+    width: 3px;
+
+    // Планшет
+    @media (min-width: 768px) {
+      top: 63px;
+      bottom: -44px;
+    }
+  }
+
+  &:last-child:before {
+    display: none;
+  }
+
+  &:hover .working-block__title:after {
+    background-color: #ea736d;
+    transition: 0.4s ease;
+  }
+
+  @media (min-width: 416px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
+
+    &:nth-child(even) {
+      text-align: right;
+      padding-left: 0;
+      padding-right: 80px;
+    }
+
+    &:nth-child(odd) {
+      text-align: left;
+      margin-left: auto;
+      padding-right: 0;
+      padding-left: 80px;
+    }
+
+    &:nth-child(even) .working-img {
+      left: auto;
+      right: -37px;
+    }
+
+    &:nth-child(even):before {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    &:nth-child(even) {
+      padding-right: 78px;
+      margin-bottom: 21px;
+    }
+    &:nth-child(odd) {
+      padding-left: 87px;
+      margin-bottom: 20px;
+    }
+    &:nth-child(even) .working-img {
+      left: auto;
+      right: -37px;
+    }
+  }
+}
+
+.working-img {
+  position: absolute;
+  left: -37px;
+  top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+  width: 74px;
+  height: 74px;
+  z-index: 2;
+
+  // Планшет
+  @media (min-width: 768px) {
+    left: -37px;
+    top: -37px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    top: -25px;
+  }
+}
+
+.working-content {
+  position: relative;
+  min-width: 251px;
+  min-height: 150px;
+  padding-left: 60px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-bottom: 61px;
+    min-width: 422px;
+  }
+}
+
+.working-content h3 {
+  margin-bottom: 2px;
+}
+
+.working-block__title {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  z-index: 1;
+
+  &:after {
+    display: none;
+    position: absolute;
+    content: "";
+    height: 7px;
+    background-color: #fbdc4d;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    // Планшет
+    @media (min-width: 1200px) {
+      display: unset;
+    }
+  }
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+
+.working-block__text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1px;
+  line-height: 1.2;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.working-block__text__time {
+  font-size: 14px;
+  font-weight: 700;
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}

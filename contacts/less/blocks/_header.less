@@ -1,0 +1,377 @@
+.header {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    max-width: 1600px;
+    background-image: url("../img/line-bg.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.header-nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 5;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 1px 11px 16px -12px #000000;
+  border-radius: 0 0 25px 25px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    margin-bottom: 75px;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-bottom: 155px;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: 0.5s;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 66.66%;
+    background-color: transparent;
+    padding-top: 0;
+    height: auto;
+    transform: translateX(0%);
+  }
+}
+
+.nav.show {
+  transform: translateX(0%);
+  padding-top: 130px;
+  z-index: 3;
+  padding-left: 50px;
+}
+
+.nav-logo {
+  position: relative;
+  margin-left: 30px;
+  font-size: 42px;
+  color: #000;
+  font-weight: 900;
+  transition: 0.5s;
+
+  &:hover {
+    z-index: 2;
+    color: #fbdc4d;
+    transition: 0.5s;
+  }
+
+  &:hover:after {
+    background-color: #000;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    height: 12px;
+    background-color: #fbdc4d;
+    bottom: 5px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
+// GAMBURGER
+.menu-toggle {
+  display: block;
+  text-align: right;
+  z-index: 4;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu-toggle__span {
+  position: relative;
+  right: 35px;
+  width: 45px;
+  height: 5px;
+  background-color: #000;
+  display: inline-block;
+  transition: 0.3s;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    height: 5px;
+    transition: 0.3s;
+  }
+
+  &:before {
+    top: -10px;
+  }
+
+  &:after {
+    top: 10px;
+  }
+}
+
+.menu-toggle__input {
+  width: 0.01px;
+  opacity: 0;
+}
+
+.menu-toggle__input:checked + .menu-toggle__span {
+  background-color: transparent;
+}
+
+.menu-toggle__input:checked + .menu-toggle__span:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle__input:checked + .menu-toggle__span:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 0px;
+  color: #000;
+  z-index: 2;
+  padding: 5px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:after {
+    display: none;
+
+    // Десктоп
+    @media (min-width: 1200px) {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 5px;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      background-color: #fbdc4d;
+      z-index: -1;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-right: 80px;
+    font-size: 20px;
+  }
+}
+
+.social-icons {
+  display: none;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #000;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+  transition: 0.3s;
+}
+
+.icon-git:hover {
+  color: #6cc644;
+  transition: 0.3s;
+}
+
+.icon-vk:hover {
+  color: #45668e;
+  transition: 0.3s;
+}
+
+.nav .header-nav__icons {
+  margin-bottom: 20px;
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.nav .communication-link {
+  @media (min-width: 768px) {
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.communication-link {
+  position: relative;
+  font-size: 18px;
+  color: #000;
+  border-bottom: 1px solid #000;
+
+  &:hover {
+    color: #039be5;
+    border-color: #039be5;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: #ea655f;
+    border-color: #ea655f;
+    transition: 0.3s;
+  }
+
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.communication-icon {
+  display: block;
+  font-size: 50px;
+  margin-right: 29px;
+  transition: 0.6s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 40%;
+    transition: 0.6s;
+  }
+}
+
+.vk-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #4d76a1;
+  border-radius: 20%;
+  color: #fff;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  border-radius: 20%;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.git-icon {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}

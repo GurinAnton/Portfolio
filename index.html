@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/animate/animate.min.css" />
+    <link rel="stylesheet" href="./js/main.js" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.css" />
+    <title>Антон Гурин Web-разработчик</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
+  </head>
+  <body>
+    <!-- ПАГИНАЦИЯ -->
+    <ul id="page-nav">
+      <li class="active">
+        <a href="#header"></a>
+      </li>
+      <li>
+        <a href="#portfolio"></a>
+      </li>
+      <li>
+        <a href="#working"></a>
+      </li>
+      <li>
+        <a href="#contacts"></a>
+      </li>
+    </ul>
+    <!--// ПАГИНАЦИЯ -->
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="header-nav">
+        <div class="animated bounceInDown">
+          <a href="./index.html" class="nav-logo">
+            АГ
+          </a>
+        </div>
+
+        <!-- GAMBURGER -->
+        <div class="menu-toggle" id="menu-toggle">
+          <label>
+            <input type="checkbox" class="menu-toggle__input" />
+            <span class="menu-toggle__span"></span>
+          </label>
+        </div>
+        <!--// GAMBURGER -->
+
+        <nav class="nav" id="nav">
+          <div class="nav-links">
+            <a href="./index.html" class="nav-link">
+              Главная
+            </a>
+            <a href="./mediamarket/index.html" class="nav-link">
+              Работы
+            </a>
+            <a href="./contacts/index.html" class="nav-link">
+              Контакты
+            </a>
+          </div>
+          <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://github.com/GurinAnton"
+              target="_blank"
+              class="social-icon icon-git"
+              ><i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://vk.com/gurinho"
+              target="_blank"
+              class="social-icon icon-vk"
+            >
+              <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="communication-icons header-nav__icons">
+            <a href="#" target="_blank" class="communication-icon git-icon"
+              ><i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/antoniogurinho/"
+              target="_blank"
+              class="communication-icon instagram-icon"
+              ><img src="./img/header/instagram.svg" />
+            </a>
+            <a
+              href="https://vk.com/gurinho"
+              target="_blank"
+              class="communication-icon vk-icon"
+              ><i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/anton.gurin.5"
+              target="_blank"
+              class="communication-icon facebook-icon"
+              ><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+          </div>
+          <a
+            href="mailto:Webmastergurin@mail.ru"
+            target="_blank"
+            class="communication-link"
+            >webmastergurin@mail.ru</a
+          >
+        </nav>
+      </div>
+      <div class="container">
+        <div class="header-card">
+          <div class="header-foto animated bounceInRight">
+            <img src="./img/header/foto.jpg" alt="Header-foto" />
+          </div>
+          <div class="header-name animated bounceInLeft">
+            <div class="name-title">
+              <span class="title-name">Антон</span>
+              <br />
+              <span class="title-name">Гурин</span>
+            </div>
+            <p class="name-text">
+              Верстальщик сайтов,веб-разработчик.<br />Оперативная
+              верстка.Работаю с соблюдением сроков и выполнением ТЗ.
+            </p>
+            <div class="name-links">
+              <a href="#skills-content" class="name-link__left header-link"
+                >Познакомиться</a
+              >
+              <a href="./contacts/index.html" class="name-link__right"
+                >Контакты</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-picture">
+        <img src="./img/header/bg.png" alt="Table" />
+      </div>
+      <div class="container">
+        <div class="header-bottom">
+          <div id="skills-content" class="skills">
+            <h2 class="bottom-title">
+              Что я умею:
+            </h2>
+            <ul class="bottom-list">
+              <li class="skills-list">
+                Pixel perfect, полное соответствие макету.
+              </li>
+              <li class="skills-list">Верстаю с сеткой или без.</li>
+              <li class="skills-list">
+                Адаптивная верстка под мобильные устройства.
+              </li>
+              <li class="skills-list">Оптимизация под retina экраны</li>
+              <li class="skills-list">С Bootstrap и без него.</li>
+            </ul>
+            <a
+              href="./mediamarket/index.html"
+              target="_blank"
+              class="skills-link header-link"
+            >
+              Смотреть работы
+            </a>
+          </div>
+          <div class="communication">
+            <h2 class="bottom-title">На связи:</h2>
+            <div class="communication-icons">
+              <a
+                href="https://github.com/GurinAnton"
+                target="_blank"
+                class="communication-icon git-icon"
+                ><i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/antoniogurinho/"
+                target="_blank"
+                class="communication-icon instagram-icon"
+                ><img src="./img/header/instagram.svg" />
+              </a>
+              <a
+                href="https://vk.com/gurinho"
+                target="_blank"
+                class="communication-icon vk-icon"
+                ><i class="fa fa-vk" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/anton.gurin.5"
+                target="_blank"
+                class="communication-icon facebook-icon"
+                ><i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+            <a href="mailto:Webmastergurin@mail.ru" class="communication-link"
+              >webmastergurin@mail.ru</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //HEADER -->
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio-title">
+          <span class="portfolio-title__name">Портфолио</span>
+        </div>
+        <!-- <nav class="portfolio-nav">
+          <ul class="portfolio-list">
+            <li class="portfolio-link">
+              <a
+                class="portfolio-link__item filter active"
+                data-filter="all"
+                href="#!"
+                >Все работы</a
+              >
+            </li>
+            <li class="portfolio-link">
+              <a
+                class="portfolio-link__item filter"
+                data-filter=".boot"
+                href="#!"
+                >Bootstrap</a
+              >
+            </li>
+            <li class="portfolio-link">
+              <a class="portfolio-link__item filter" data-filter=".wp" href="#!"
+                >WordPress</a
+              >
+            </li>
+            <li class="portfolio-link">
+              <a
+                class="portfolio-link__item filter"
+                data-filter=".front"
+                href="#!"
+                >Frontend</a
+              >
+            </li>
+          </ul>
+        </nav> -->
+        <div class="portfolio-top">
+          <div class="portfolio-top__left">
+            <div class="portfolio-top__img animated">
+              <img src="./img/portfolio/top-left.jpg" alt="Portfolio img" />
+            </div>
+            <div class="portfolio-top__title">
+              <a
+                href="./foresttravel/index.html"
+                target="_blank"
+                class="portfolio-top__link"
+              >
+                Верстка Форест тревел
+              </a>
+            </div>
+            <div class="portfolio-top__text">
+              Верстка многостраничного сайта.
+            </div>
+          </div>
+          <div class="portfolio-top__right">
+            <div class="portfolio-top__img">
+              <img src="./img/portfolio/top-right.jpg" alt="Portfolio img" />
+            </div>
+            <div class="portfolio-top__title">
+              <a
+                href="../Unit/index.html"
+                target="_blank"
+                class="portfolio-top__link"
+                >Сайт ЮНИТ</a
+              >
+            </div>
+            <div class="portfolio-top__text">
+              Верстка лендинга.
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="portfolio-bottom" id="portfolio-projects">
+          <a href="#!" class="portfolio-bottom__content__link ">
+            <div class="portfolio-bottom__content mix front">
+              <div class="portfolio-bottom__block">
+                <img src="./img/portfolio/1.jpg" alt="Portfolio img" />
+                <div class="portfolio-bottom__overlay">
+                  <a href="#" class="overlay-link">Смотреть проект</a>
+                </div>
+              </div>
+              <div class="portfolio-bottom__title">
+                <a href="#" class="portfolio-top__link">Верстка “Мир Авто”</a>
+              </div>
+              <div class="portfolio-bottom__text">
+                Верстка многостраничного сайта.
+              </div>
+            </div>
+          </a>
+          <a href="#!" class="portfolio-bottom__content__link ">
+            <div class="portfolio-bottom__content mix wp front">
+              <div class="portfolio-bottom__block">
+                <img src="./img/portfolio/3.jpg" alt="Portfolio img" />
+                <div class="portfolio-bottom__overlay">
+                  <a href="#" class="overlay-link">
+                    Смотреть проект
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-bottom__title">
+                <a href="#" class="portfolio-top__link">Верстка “Мир Авто”</a>
+              </div>
+              <div class="portfolio-bottom__text">
+                Верстка многостраничного сайта.
+              </div>
+            </div>
+          </a>
+          <a href="#!" class="portfolio-bottom__content__link none ">
+            <div class="portfolio-bottom__content mix boot wp">
+              <div class="portfolio-bottom__block none">
+                <img src="./img/portfolio/2.jpg" alt="Portfolio img" />
+                <div class="portfolio-bottom__overlay">
+                  <a href="#" class="overlay-link">
+                    Смотреть проект
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-bottom__title none">
+                <a href="#" class="portfolio-top__link">Верстка “Мир Авто”</a>
+              </div>
+              <div class="portfolio-bottom__text none">
+                Верстка многостраничного сайта.
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="portfolio-bottom__link">
+          <a href="./portfolio/index.html" class="bottom__link"
+            >Смотреть все работы</a
+          >
+        </div> -->
+      </div>
+    </section>
+    <!-- //PORTFOLIO -->
+
+    <!-- WORKING -->
+    <section class="working" id="working">
+      <div class="container">
+        <div class="portfolio-title">
+          <span class="portfolio-title__name">Как</span>
+          <span class="portfolio-title__name">я</span>
+          <span class="portfolio-title__name">работаю</span>
+        </div>
+        <div class="working-container">
+          <div class="working-block">
+            <div class="working-img">
+              <img src="./img/working/mark.png" />
+            </div>
+            <div class="working-content animated mov">
+              <h3><span class="working-block__title">Оцениваю макет</span></h3>
+              <p class="working-block__text">
+                Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+              </p>
+              <p class="working-block__text__time">Время: 2 - 4 часа</p>
+            </div>
+          </div>
+          <div class="working-block">
+            <div class="working-img">
+              <img src="./img/working/presentation-chart.png" />
+            </div>
+            <div class="working-content animated mov">
+              <h3>
+                <span class="working-block__title"
+                  >ТЗ, смета и график работ</span
+                >
+              </h3>
+              <p class="working-block__text">
+                Согласовываем техническое задание и график работ по проекту.
+                Осмечиваю стоимость по этапам работы.
+              </p>
+              <p class="working-block__text__time">Время: 2 - 4 часа</p>
+            </div>
+          </div>
+          <div class="working-block">
+            <div class="working-img">
+              <img src="./img/working/24-hours.png" />
+            </div>
+            <div class="working-content animated mov">
+              <h3>
+                <span class="working-block__title"
+                  >Вы держите руку на пульсе</span
+                >
+              </h3>
+              <p class="working-block__text">
+                Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                любое время можете видеть актуальное состояние проекта и задач.
+              </p>
+              <p class="working-block__text__time">Время: 2 часа</p>
+            </div>
+          </div>
+          <div class="working-block">
+            <div class="working-img">
+              <img src="./img/working/code-alt.png" />
+            </div>
+            <div class="working-content animated mov">
+              <h3>
+                <span class="working-block__title">Выполняю каждый этап</span>
+              </h3>
+              <p class="working-block__text">
+                Поочередно выполняю каждый этап работы. Передаю результаты.
+                Заказчик производит поэтапную оплату.
+              </p>
+              <p class="working-block__text__time">Время: 2 - 4 часа</p>
+            </div>
+          </div>
+          <div class="working-block">
+            <div class="working-img">
+              <img src="./img/working/diamond.png" />
+            </div>
+            <div class="working-content animated mov">
+              <h3>
+                <span class="working-block__title"
+                  >Финальное ревью проекта</span
+                >
+              </h3>
+              <p class="working-block__text">
+                Проект готов. Финальное ревью и полировка до идеального
+                состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                заказчика.
+              </p>
+              <p class="working-block__text__time">Время: 2 - 4 часа</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //WORKING -->
+
+    <!-- CONTACTS -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts-title">
+          <span class="portfolio-title__name">Контакты</span>
+        </div>
+        <div class="contacts-block">
+          <div class="contacts-block__content">
+            <div class="block-subtitle">
+              Если вы ищите специалиста по верстке сайтов, front-end
+              разработчика в команду или для работы над проектом — напишите мне.
+            </div>
+            <div class="block-feedback">
+              <ul class="feedback-list">
+                <li class="feedback-list__item">
+                  <div class="feedback-name">Email</div>
+                  <div class="feedback-info">
+                    <a
+                      href="mailto:Webmastergurin@mail.ru"
+                      class="feedback-link"
+                      >Webmastergurin@mail.ru</a
+                    >
+                  </div>
+                </li>
+                <li class="feedback-list__item">
+                  <div class="feedback-name">Skype</div>
+                  <div class="feedback-info">
+                    <a href="skype:To4ka-G?call" class="feedback-link"
+                      >To4ka-G</a
+                    >
+                  </div>
+                </li>
+                <li class="feedback-list__item">
+                  <div class="feedback-name">Телефон</div>
+                  <div class="feedback-info">
+                    <a href="tel://+79165546118" class="feedback-link"
+                      >+ 7 916 554 61 18</a
+                    >
+                  </div>
+                </li>
+                <li class="feedback-list__item">
+                  <div class="feedback-name">Адрес</div>
+                  <div class="feedback-info">
+                    Хотьково Россия
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="communication-icons">
+              <a
+                href="https://github.com/GurinAnton"
+                target="_blank"
+                class="communication-icon git-icon"
+                ><i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/antoniogurinho/"
+                target="_blank"
+                class="communication-icon instagram-icon"
+                ><img src="./img/header/instagram.svg" />
+              </a>
+              <a
+                href="https://vk.com/gurinho"
+                target="_blank"
+                class="communication-icon vk-icon"
+                ><i class="fa fa-vk" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/anton.gurin.5"
+                target="_blank"
+                class="communication-icon facebook-icon"
+                ><i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <form id="form">
+            <div class="form-content">
+              <div class="form-content__input">
+                <input type="text" class="input" name="email" />
+                <span class="fake-placeholder">Ваш Email</span>
+              </div>
+              <div class="form-content__input">
+                <input type="text" name="theme" class="input" />
+                <span class="fake-placeholder">Тема сообщения</span>
+              </div>
+              <div class="form-content__input">
+                <textarea
+                  type="text"
+                  name="message"
+                  class="input textarea"
+                  rows="3"
+                ></textarea>
+                <span class="fake-placeholder">Сообщение</span>
+              </div>
+              <button class="form-button">Отправить</button>
+            </div>
+          </form>
+          <div id="answer"></div>
+          <div class="contact-img">
+            <img src="./img/contacts/icon.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // CONTACTS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer-title">© 2020 — Антон Гурин</h3>
+        <p class="footer-text">
+          Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.<br />
+          Этот сайт сделал в рамках прохождения обучения по верстке на курсах от
+          <a href="https://webcademy.ru/" target="_blank" class="footer-link"
+            >WebCademy.ru</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- //FOOTER -->
+
+    <!-- СКРИПТЫ -->
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="./libs/jquery.iMissYou.min.js"></script>
+    <script src="./libs/jquery.validate/jquery.validate.js"></script>
+    <script src="./libs/nav.js"></script>
+    <script src="./libs/mixitup2/jquery.mixitup.min.js"></script>
+    <script src="https://use.fontawesome.com/f27df10333.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

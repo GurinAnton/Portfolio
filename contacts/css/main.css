@@ -415,6 +415,11 @@ span {
 }
 .nav .header-nav__icons {
   margin-bottom: 20px;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+     -moz-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 @media (min-width: 1200px) {
   .nav .header-nav__icons {

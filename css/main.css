@@ -479,6 +479,11 @@ span {
   transition: 0.3s;
 }
 .nav .header-nav__icons {
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+     -moz-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-bottom: 20px;
 }
 @media (min-width: 1200px) {

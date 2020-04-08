@@ -37,7 +37,7 @@
   z-index: 5;
   position: fixed;
   background-color: #fff;
-  box-shadow: 1px 11px 16px -12px #000000;
+  box-shadow: 1px 11px 16px -12px #bdbdbd;
   border-radius: 0 0 25px 25px;
 
   // Планшет
@@ -89,7 +89,12 @@
   transform: translateX(0%);
   padding-top: 130px;
   z-index: 3;
-  padding-left: 50px;
+  padding-left: 25px;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    padding-left: 50px;
+  }
 }
 
 .nav-logo {
@@ -443,7 +448,7 @@
   // Планшет
   @media (min-width: 768px) {
     margin-bottom: 0;
-    width: 340px;
+    min-width: 395px;
     line-height: 1.5;
     text-align: left;
   }
@@ -451,8 +456,8 @@
   // Десктоп
   @media (min-width: 1200px) {
     margin-bottom: 30px;
-    font-size: 24px;
-    width: 520px;
+    font-size: 23px;
+    min-width: 520px;
   }
 }
 
@@ -686,6 +691,7 @@
 
 .communication-icons {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -693,8 +699,8 @@
 .communication-icon {
   display: block;
   font-size: 50px;
-  margin-right: 29px;
   transition: 0.6s;
+  margin-right: 29px;
 
   &:last-child {
     margin-right: 0;
@@ -704,6 +710,18 @@
     opacity: 40%;
     transition: 0.6s;
   }
+}
+
+.nav .vk-icon {
+  margin-right: 14px;
+}
+
+.nav .instagram-icon {
+  margin-right: 8px;
+}
+
+.nav .git-icon {
+  margin-right: 8px;
 }
 
 .vk-icon {

@@ -161,9 +161,9 @@ span {
   z-index: 5;
   position: fixed;
   background-color: #fff;
-  -webkit-box-shadow: 1px 11px 16px -12px #000000;
-     -moz-box-shadow: 1px 11px 16px -12px #000000;
-          box-shadow: 1px 11px 16px -12px #000000;
+  -webkit-box-shadow: 1px 11px 16px -12px #bdbdbd;
+     -moz-box-shadow: 1px 11px 16px -12px #bdbdbd;
+          box-shadow: 1px 11px 16px -12px #bdbdbd;
   -webkit-border-radius: 0 0 25px 25px;
      -moz-border-radius: 0 0 25px 25px;
           border-radius: 0 0 25px 25px;
@@ -254,7 +254,12 @@ span {
           transform: translateX(0%);
   padding-top: 130px;
   z-index: 3;
-  padding-left: 50px;
+  padding-left: 25px;
+}
+@media (min-width: 1200px) {
+  .nav.show {
+    padding-left: 50px;
+  }
 }
 .nav-logo {
   position: relative;
@@ -469,6 +474,16 @@ span {
 }
 .nav .header-nav__icons {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
      -moz-box-pack: start;
@@ -479,6 +494,34 @@ span {
   .nav .header-nav__icons {
     display: none;
   }
+}
+.communication-icon {
+  display: block;
+  font-size: 50px;
+  margin-right: 29px;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
+}
+.communication-icon:last-child {
+  margin-right: 0;
+}
+.communication-icon:hover {
+  opacity: 40%;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  -moz-transition: 0.6s;
+  transition: 0.6s;
+}
+.nav .vk-icon {
+  margin-right: 14px;
+}
+.nav .instagram-icon {
+  margin-right: 8px;
+}
+.nav .git-icon {
+  margin-right: 8px;
 }
 @media (min-width: 1200px) {
   .nav .communication-link {

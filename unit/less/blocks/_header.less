@@ -36,7 +36,7 @@
   z-index: 5;
   position: fixed;
   background-color: #fff;
-  box-shadow: 1px 11px 16px -12px #000000;
+  box-shadow: 1px 11px 16px -12px #bdbdbd;
   border-radius: 0 0 25px 25px;
 
   // Планшет
@@ -88,7 +88,12 @@
   transform: translateX(0%);
   padding-top: 130px;
   z-index: 3;
-  padding-left: 50px;
+  padding-left: 25px;
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    padding-left: 50px;
+  }
 }
 
 .nav-logo {
@@ -281,12 +286,26 @@
 
 .nav .header-nav__icons {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
 
   // Десктоп
   @media (min-width: 1200px) {
     display: none;
   }
+}
+
+.nav .vk-icon {
+  margin-right: 14px;
+}
+
+.nav .instagram-icon {
+  margin-right: 8px;
+}
+
+.nav .git-icon {
+  margin-right: 8px;
 }
 
 .nav .communication-link {

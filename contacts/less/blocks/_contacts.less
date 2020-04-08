@@ -122,6 +122,7 @@
     position: absolute;
     top: 31px;
     transform: translateX(-72%);
+    z-index: 1;
   }
 }
 
@@ -139,6 +140,7 @@
     width: 50%;
     padding-right: 50px;
     padding-top: 21px;
+    z-index: 2;
   }
 }
 
@@ -238,7 +240,13 @@
 
 .communication-icons {
   display: flex;
+  justify-content: center;
   align-items: center;
+
+  // Планшет
+  @media (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .header-bottom .communication-icons {

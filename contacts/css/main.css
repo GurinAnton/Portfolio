@@ -319,6 +319,9 @@ span {
           transform: rotate(-45deg);
   top: 0;
 }
+label {
+  cursor: pointer;
+}
 .nav-links {
   display: -webkit-box;
   display: -webkit-flex;

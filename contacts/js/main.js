@@ -2,14 +2,14 @@ const formRows = document.querySelectorAll(".form-content__input");
 const formRowsInputs = document.querySelectorAll(".input");
 
 for (let i = 0; i < formRows.length; i++) {
-  formRows[i].addEventListener("click", function() {
+  formRows[i].addEventListener("click", function () {
     const placeholderElement = this.querySelector(".fake-placeholder");
     placeholderElement.classList.add("active");
   });
 }
 
 for (let i = 0; i < formRowsInputs.length; i++) {
-  formRowsInputs[i].addEventListener("blur", function() {
+  formRowsInputs[i].addEventListener("blur", function () {
     const thisParent = this.parentElement;
 
     if (this.value == "") {
@@ -18,37 +18,37 @@ for (let i = 0; i < formRowsInputs.length; i++) {
   });
 }
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   $.iMissYou({
     title: "I Miss you !",
     favicon: {
       enabled: true,
-      src: "./img/iMissYouFavicon.ico"
-    }
+      src: "./img/iMissYouFavicon.ico",
+    },
   });
 });
 
 const mobileMenu = document.querySelector("#nav");
 const mobileMenuBtn = document.querySelector("#menu-toggle input");
+const bodyElement = document.querySelector("body");
+const overlayBlock = document.querySelector("#overlay");
+const menuOpenButton = document.querySelector(".menu-toggle__input");
 
-mobileMenuBtn.addEventListener("click", function() {
+mobileMenuBtn.addEventListener("click", function () {
   mobileMenu.classList.toggle("show");
+  bodyElement.classList.toggle("noscroll");
+  overlayBlock.classList.toggle("show");
 });
 
-$(document).ready(function() {
-  // NAV PAGE
-  $("#page-nav").onePageNav({
-    currentClass: "active",
-    changeHash: false,
-    scrollSpeed: 750,
-    scrollThreshold: 0.5,
-    filter: "",
-    easing: "swing",
-    begin: function() {},
-    end: function() {},
-    scrollChange: function($currentListItem) {}
-  });
+// RESIZE
+window.addEventListener("resize", function () {
+  mobileMenu.classList.remove("show");
+  bodyElement.classList.remove("noscroll");
+  overlayBlock.classList.remove("show");
+  menuOpenButton.checked = false;
+});
 
+$(document).ready(function () {
   $("#portfolio-projects").mixItUp();
 
   let allHideWorks = $("hide-work");
@@ -58,30 +58,30 @@ $(document).ready(function() {
     rules: {
       email: {
         required: true,
-        email: true
+        email: true,
       },
       theme: {
-        required: true
+        required: true,
       },
       message: {
-        required: true
-      }
+        required: true,
+      },
     },
     messages: {
       email: {
         required: "Введите email",
-        email: "отсутсвует символ @"
+        email: "отсутсвует символ @",
       },
       theme: {
-        required: "Введите тему сообщения"
+        required: "Введите тему сообщения",
       },
       message: {
-        required: "Введите текст сообщения"
-      }
+        required: "Введите текст сообщения",
+      },
     },
-    submitHandler: function(form) {
+    submitHandler: function (form) {
       ajaxFormSubmit();
-    }
+    },
   });
 
   // Функция AJAX запрса на сервер
@@ -96,10 +96,10 @@ $(document).ready(function() {
       data: string, // Какие даные отправляем, в данном случае отправляем переменную string
 
       // Функция если все прошло успешно
-      success: function(html) {
+      success: function (html) {
         $("#form").slideUp(800);
         $("#answer").html(html);
-      }
+      },
     });
 
     // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций

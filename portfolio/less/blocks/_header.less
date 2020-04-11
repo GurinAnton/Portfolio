@@ -117,13 +117,13 @@
 
 // GAMBURGER
 .menu-toggle {
+  position: relative;
   display: block;
   text-align: right;
   z-index: 4;
-
-  // Планшет
-  @media (min-width: 768px) {
-  }
+  width: 60px;
+  height: 40px;
+  right: 20px;
 
   // Десктоп
   @media (min-width: 1200px) {
@@ -131,13 +131,20 @@
   }
 }
 
+.input-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 37px;
+}
+
 .menu-toggle__span {
   position: relative;
-  right: 35px;
-  width: 50px;
-  height: 3px;
+  width: 45px;
+  height: 5px;
   background-color: #000;
-  display: inline-block;
   transition: 0.3s;
 
   &:before,
@@ -206,6 +213,7 @@
   color: #000;
   z-index: 2;
   padding: 5px;
+  width: fit-content;
 
   &:last-child {
     margin-right: 0px;

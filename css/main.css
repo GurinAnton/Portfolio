@@ -321,22 +321,44 @@ span {
   }
 }
 .menu-toggle {
+  position: relative;
   display: block;
   text-align: right;
   z-index: 4;
+  width: 60px;
+  height: 40px;
+  right: 20px;
 }
 @media (min-width: 1200px) {
   .menu-toggle {
     display: none;
   }
 }
+.input-label {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 52px;
+  height: 37px;
+}
 .menu-toggle__span {
   position: relative;
-  right: 35px;
   width: 45px;
   height: 5px;
   background-color: #000;
-  display: inline-block;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -425,6 +447,9 @@ label {
   color: #000;
   z-index: 2;
   padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .nav-link:last-child {
   margin-right: 0px;

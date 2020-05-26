@@ -97,7 +97,7 @@ $(document).ready(function () {
     },
   });
 
-  // Функция AJAX запрса на сервер
+  // Функция AJAX запроса на сервер
 
   function ajaxFormSubmit() {
     let string = $("#form").serialize(); // Соханяем данные введенные в форму в строку.
